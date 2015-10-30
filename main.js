@@ -67,7 +67,13 @@ $(document).ready(function() {
 
     $selected.appendTo($('#favorites'));
 
-    //$selected.each
+    console.log($selected);
+    [].forEach.call($selected, function(box) {
+      var $box = $(box);
+      var bgColor = rgbToHex( $box.css('background-color') );
+      $box.css('color', invertColor(bgColor));
+      $box.text( bgColor );
+    });
 
     $selected.removeClass('selected');
   }
