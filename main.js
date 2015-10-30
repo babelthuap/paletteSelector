@@ -63,7 +63,13 @@ $(document).ready(function() {
   }
 
   function moveToFavorites() {
-    $('.selected').appendTo($('#favorites')).removeClass('selected');
+    var $selected = $('.selected');
+
+    $selected.appendTo($('#favorites'));
+
+    //$selected.each
+
+    $selected.removeClass('selected');
   }
 
   function clearFavorites() {
