@@ -4,7 +4,11 @@ body {
 }
 
 #boxes {
-  min-height: 70px;
+  min-height: 76px;
+}
+
+#boxes div, #favorites {
+  cursor: pointer;
 }
 
 #boxes div, #favorites div {
@@ -23,6 +27,6 @@ body {
 #favorites {
   border: 5px solid white;
   border-radius: 12px;
-  height: 66px;
+  min-height: 72px;
   font-family: monospace;
 }
